@@ -28,4 +28,10 @@ public class EightBallTest {
         eightBall.addAnswer("Get in.");
         assertNotNull(eightBall.getRandomAnswer());
     }
+
+    @Test
+    public void addUserAnswer(){
+        eightBall.addUserAnswer();
+        assertEquals(1, eightBall.getAnswerCount());
+    }
 }
